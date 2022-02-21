@@ -81,3 +81,7 @@ table tr th,td{
          -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
 }
+
+.clear-btn{
+    letter-spacing: normal;
+}

@@ -1,6 +1,7 @@
 let counter=0;
 document.getElementById('btn').addEventListener('click',function(){
     message('initial');
+    // 
     let=randomNumber=Math.floor(Math.random()*11);
     let inputValue= document.getElementById('getNumber').valueAsNumber;
     if(inputValue<0 || inputValue>10 | inputValue=="" || isNaN(inputValue)==true){
@@ -9,6 +10,7 @@ document.getElementById('btn').addEventListener('click',function(){
     }
     // message('initial');
     counter++;
+    
     let tableInfo= document.getElementById('table-info');
     let tr= document.createElement('tr');
     let td1=document.createElement('td')
@@ -29,10 +31,14 @@ document.getElementById('btn').addEventListener('click',function(){
     tr.appendChild(td2)
     tr.appendChild(td3)
     tr.appendChild(td4)
-   tableInfo.appendChild(tr);
+    tableInfo.appendChild(tr);
 
    document.getElementById('getNumber').value="";
 
+})
+document.getElementById('btnClear').addEventListener('click',function(){
+    location.reload();
+    
 })
 
 function message(status){
