@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Anton&family=Cormorant+Garamond&family=Dancing+Script&family=Dongle&family=Josefin+Sans&family=Philosopher&family=Poppins:wght@500&family=Roboto&family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#invalidAlert{
+    padding: 8px 10px;
+    border-left: 5px solid rgb(236, 64, 64);
+    border-radius: 5px;
+    display: none;
+}
+
+.container ,.input-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 10% ;
+    /* width: 250px; */
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#heading{
+    font-size: 1.5em;
+    margin-bottom: 1px;
+    font-weight: 600;
+    margin-top: 20px;
+    background:linear-gradient(45deg,blue,red);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+#sub-heading{
+    font-weight: 100;
+    color: #8298ad;
+    
+    margin-bottom: 10px;
+}
+.input-area input{
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border:1.5px solid rgb(238, 229, 229) ;
+    /* border-image:linear-gradient(45deg,red,blue) 10; */
+    
+}
+.input-area input:focus{
+  transition: 0.5s;
+  outline: none;
+  border-image:linear-gradient(45deg,blue,red) 10;
+}
+
+.input-area input,placeholder{
+    font-weight: 500;
+    background:linear-gradient(45deg,blue,red);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+
+button{
+    letter-spacing: 0.2cm;
+    border: 1.5px solid #c9cdd1;
+    padding: 8px 20px;
+    border-radius: 10px;
+    
+    
+}
+
+#btnName{
+    background:linear-gradient(45deg,blue,red);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+  
+}
+table{
+    margin-top: 20px;
+}
+table tr th,td{
+    font-weight: 500;
+    background:linear-gradient(45deg,rgb(58, 58, 197),rgb(182, 33, 33));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            text-align: center;
+            
+    
+}
+
+@media (max-width:688px){
+    .container{
+        width: 100%;
+    }
+}
