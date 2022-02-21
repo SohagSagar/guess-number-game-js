@@ -1,21 +1,14 @@
 let counter=0;
 document.getElementById('btn').addEventListener('click',function(){
-    counter++;
+    message('initial');
     let=randomNumber=Math.floor(Math.random()*11);
     let inputValue= document.getElementById('getNumber').valueAsNumber;
     if(inputValue<0 || inputValue>10 | inputValue=="" || isNaN(inputValue)==true){
         message('invalid');
         return;
     }
-
-    
-
-    if(inputValue==randomNumber){
-        message('win');
-        document.getElementById('getNumber').value='';
-    }
-
-
+    // message('initial');
+    counter++;
     let tableInfo= document.getElementById('table-info');
     let tr= document.createElement('tr');
     let td1=document.createElement('td')
@@ -43,11 +36,13 @@ document.getElementById('btn').addEventListener('click',function(){
 })
 
 function message(status){
-    if(status=='win'){
-        
-    }
+
     if(status=='invalid'){
-        document.getElementById('invalidAlert').style.display=('block')
+        document.getElementById('invalidAlert').style.display=('block');
+    }
+    if(status=='initial'){
+        document.getElementById('invalidAlert').style.display=('none');
+        console.log('ok');
     }
   
 }
