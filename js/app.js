@@ -1,16 +1,16 @@
 let counter=0;
 document.getElementById('btn').addEventListener('click',function(){
+    // message('initial');
     message('initial');
-    // 
     let=randomNumber=Math.floor(Math.random()*11);
     let inputValue= document.getElementById('getNumber').valueAsNumber;
     if(inputValue<0 || inputValue>10 | inputValue=="" || isNaN(inputValue)==true){
         message('invalid');
         return;
     }
-    // message('initial');
+    document.getElementById('scoreTable').style.display=('block');
+    document.getElementById('btnClear').style.display=('block');
     counter++;
-    
     let tableInfo= document.getElementById('table-info');
     let tr= document.createElement('tr');
     let td1=document.createElement('td')

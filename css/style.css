@@ -33,9 +33,15 @@ body{
         -webkit-background-clip: text;
 }
 #sub-heading{
-    font-weight: 100;
+    font-weight: 200;
     color: #8298ad;
     margin-bottom: 10px;
+}
+#scoreTable{
+    display: none;
+}
+#btnClear{
+    display: none;
 }
 .input-area input{
     padding: 10px;
